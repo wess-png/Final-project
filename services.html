@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        :root {
+            --background-color: white;
+            --text-color: black;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            --background-color: black;
+            --text-color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar header section -->
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="hero">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="index.html">
+                              Home
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="about.html">
+                              About
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="services.html">
+                              Service
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="contact.html">
+                              Login
+                          </a>
+                    </li>
+                </ul>
+                        <button class="btn" id="modeToggle">Dark Mode</button>
+    <script>
+        const modeToggleBtn = document.getElementById("modeToggle");
+        const body = document.body;
+
+        modeToggleBtn.addEventListener("click", function() {
+            body.classList.toggle("dark-mode");
+            if (body.classList.contains("dark-mode")) {
+                modeToggleBtn.textContent = "Light Mode";
+            } else {
+                modeToggleBtn.textContent = "Dark Mode";
+            }
+        });
+    </script>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-heading">
+            <h1 style="display: flex; justify-content: center;" class="my-heading text-center">My Services</h1>
+        </div>
+        <div class="services-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <h3 class="greet-heading blue-text">Web Design</h3>
+                        <img src="web design image.webp" alt="">
+                        <p class="small-para">
+                          Professional Web Design Service
+                          I provide modern, responsive web design solutions tailored to your brand and business goals. Whether you need a personal portfolio, an e-commerce platform, or a corporate website, I create visually appealing, user-friendly, and mobile-optimized websites. Using HTML5, CSS3, JavaScript, and frameworks like React or WordPress, I ensure your site is fast, secure, and fully customizable. My design process includes collaboration to ensure the website reflects your unique vision while delivering a seamless user experience. Get in touch to start building your online presence with a custom website design.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <h3 class="greet-heading blue-text">
+                              Web Development
+                          </h3>
+                          <img src="Web Development Image.jpg" alt="">
+                        <p class="small-para">
+                          Professional Web Development Service
+                          I offer full-stack web development services to bring your ideas to life. From dynamic, responsive front-end designs to robust back-end functionality, I build websites that are fast, secure, and scalable. Proficient in technologies like HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB and MySQL, I ensure seamless integration and optimized performance. Whether it's creating a new website or enhancing an existing one, my development process focuses on delivering a solution tailored to your business needs. Let's collaborate to develop your next digital project!
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <h3 class="greet-heading blue-text">SEO</h3>
+                        <img src="SEO Image2.webp" alt="">
+                        <p class="small-para">
+                          Professional SEO Services
+                          Boost your online visibility with my tailored SEO services. I specialize in optimizing websites for search engines through keyword research, on-page and off-page optimization, technical SEO, and content strategy. By improving your site’s structure, loading speed, and mobile usability, I help enhance your rankings on Google and other search engines. My approach is data-driven, ensuring that your website not only attracts more traffic but also converts visitors into customers. Let’s work together to increase your search engine presence and grow your business organically.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <h3 class="greet-heading blue-text">
+                              Content Writting
+                          </h3>
+                          <img src="Content Writting Image.jpg" alt="">
+                        <p class="small-para">
+                          Professional Content Writing Service
+                          I provide high-quality, engaging content tailored to your audience and brand voice. Whether you need blog posts, website copy, product descriptions, or articles, my content is designed to inform, persuade, and convert. With a focus on clarity, SEO optimization, and relevance, I ensure that your message resonates with readers while improving your search engine visibility. Let's work together to create content that not only captures attention but also drives results for your business.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <h3 class="greet-heading blue-text">
+                              WordPress Dev
+                          </h3>
+                          <img src="Wordpress Image.gif" alt="">
+                        <p class="small-para">
+                          Professional WordPress Development Service
+                          I offer expert WordPress development services, creating custom, responsive websites tailored to your specific needs. Whether you need a simple blog, an e-commerce store, or a complex corporate website, I build scalable and secure WordPress sites optimized for performance. From theme customization and plugin integration to SEO optimization and website maintenance, I ensure your site is user-friendly, fast, and aligned with your business goals. Let's collaborate to develop a WordPress site that stands out and drives success.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card">
+                        <h3 class="greet-heading blue-text">
+                              Video Editing
+                          </h3>
+                          <img src="Video Editing Image.jpg" alt="">
+                        <p class="small-para">
+                          Professional Video Editing Service
+                          I offer a personalized video editing service tailored to
+                           meet all your needs, whether for promotional clips, corporate
+                            videos, YouTube content, or creative projects. With advanced
+                             skills in software like Adobe Premiere Pro and DaVinci 
+                             Resolve, I turn your raw footage into engaging videos, 
+                             with a focus on storytelling, pacing, and visual quality.
+                              My process includes regular communication to ensure that
+                               every project perfectly reflects your vision. Contact me 
+                               to discuss your project and get a customized quote.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2024 All rights reserved |
+                This portfolio website template is created 
+                  by Riahi Wassim.
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+            integrity=
+    "sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+          </script>
+    
+</body>
+</html>

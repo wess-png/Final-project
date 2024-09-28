@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+          --background-color: white;
+          --text-color: black;
+      }
+
+      body {
+          background-color: var(--background-color);
+          color: var(--text-color);
+          transition: background-color 0.3s, color 0.3s;
+      }
+
+      .dark-mode {
+          --background-color: black;
+          --text-color: white;
+      }
+  </style>
+  </head>
+  
+  <body>
+    <div class="hero">
+      <nav class="hero">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Service</a></li>
+          <li><a href="contact.html">Login</a></li>
+        </ul>
+        <button id="modeToggle" class="btn">Dark mode</button>
+      </nav>
+
+      <div class="content">
+        <span class="title">Freelance Web Developer</span>
+        <h1>Hello, I'm <span>Wassim</span></h1>
+        <p>
+          I'm working on a professional, visually sophisticated and
+          technologically proficient, responsive and multi-functional React
+          Components.
+        </p>
+      </div>
+    </div>
+
+    
+  </body>
+</html>

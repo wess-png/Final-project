@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        :root {
+            --background-color: white;
+            --text-color: black;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            --background-color: black;
+            --text-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="hero">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="index.html">
+                              Home
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="about.html">
+                              About
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="services.html">
+                              Service
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="contact.html">
+                              Login
+                          </a>
+                    </li>
+                </ul>
+                    <button class="btn" id="modeToggle">Dark Mode</button>
+
+    <script>
+        const modeToggleBtn = document.getElementById("modeToggle");
+        const body = document.body;
+
+        modeToggleBtn.addEventListener("click", function() {
+            body.classList.toggle("dark-mode");
+            if (body.classList.contains("dark-mode")) {
+                modeToggleBtn.textContent = "Light Mode";
+            } else {
+                modeToggleBtn.textContent = "Dark Mode";
+            }
+        });
+    </script>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <div id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+                <Span style="font-size: xxx-large;">I</Span> am a passionate software engineer with a strong foundation
+                in designing and developing innovative solutions across
+                various platforms. My experience spans full-stack development,
+                with expertise in front-end technologies like HTML, CSS, JavaScript,
+                and back-end frameworks such as Node.js and Python. I am skilled in
+                creating responsive and adaptive web applications, ensuring an
+                excellent user experience. Throughout my career, I've
+                worked on diverse projects, ranging from portfolio websites
+                to complex enterprise-level applications, always focusing on
+                writing clean, maintainable code and continuously improving
+                my skill set to stay ahead in the fast-evolving tech landscape.
+            </p>
+
+        </div>
+        <div class="about-image">
+            <img src="about me.png" alt="About Image">
+        </div>
+    </div>
+    
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2024 All rights reserved |
+                This portfolio website template is created 
+                  by Riahi Wassim.
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+            integrity=
+    "sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+          </script>
+</body>
+</html>
